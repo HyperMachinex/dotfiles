@@ -1,0 +1,116 @@
+/* Wofi CSS styling - Brown Theme to match Waybar
+ Location: ~/.config/wofi/style.css */
+
+/* Main window */
+window {
+    margin: 0px;
+    border: 2px solid #8B4513;
+    background-color: #3E2723;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 14px;
+}
+
+/* Input box */
+#input {
+    margin: 5px;
+    border: 2px solid #654321;
+    color: #D2B48C;
+    background-color: #2E1A17;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#input:focus {
+    border-color: #CD853F;
+    outline: none;
+}
+
+/* Inner box containing the scroll area */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #3E2723;
+    border-radius: 8px;
+}
+
+/* Outer box */
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #3E2723;
+    border-radius: 8px;
+}
+
+/* Scroll area */
+#scroll {
+    margin: 0px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Text styling */
+#text {
+    margin: 5px;
+    border: none;
+    color: #D2B48C;
+    font-weight: normal;
+}
+
+/* Entry (each item in the list) */
+#entry {
+    background-color: transparent;
+    color: #D2B48C;
+    border: none;
+    border-radius: 6px;
+    margin: 2px;
+    padding: 8px;
+}
+
+/* Selected entry */
+#entry:selected {
+    background-color: #5D4037;
+    color: #F5DEB3;
+    border: 1px solid #CD853F;
+}
+
+/* Entry on hover */
+#entry:hover {
+    background-color: #654321;
+    border: 1px solid #8B4513;
+}
+
+/* Image (application icons) */
+#img {
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+/* Unselected text */
+#unselected {
+    color: #A1887F;
+}
+
+/* Selected text */
+#selected {
+    color: #F5DEB3;
+    font-weight: bold;
+}
+
+/* Scrollbar */
+scrollbar {
+    background-color: #654321;
+    border-radius: 6px;
+    width: 8px;
+}
+
+scrollbar slider {
+    background-color: #8B4513;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+scrollbar slider:hover {
+    background-color: #A0522D;
+}

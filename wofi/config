@@ -1,0 +1,38 @@
+# Wofi configuration file
+
+# Window dimensions
+width=600
+height=400
+
+
+# Appearance
+show=drun
+prompt=Search...
+filter_rate=100
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
+insensitive=true
+allow_images=true
+image_size=32
+
+# Behavior
+hide_scroll=true
+print_command=true
+layer=overlay
+insensitive=true
+parse_search=false
+exec_search=false
+
+# Columns and matching
+columns=1
+matching=contains
+sort_order=alphabetical
+gtk_dark=true
+dynamic_lines=false
+
+# Key bindings (optional)
+key_expand=Tab
+key_exit=Escape

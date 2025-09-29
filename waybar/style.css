@@ -1,0 +1,148 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', 'Font Awesome 5 Free';
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(62, 39, 35, 0.95);
+    border-bottom: 3px solid rgba(101, 67, 33, 0.5);
+    color: #D2B48C;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces */
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    padding: 4px 12px;
+    background-color: rgba(101, 67, 33, 0.3);
+    color: rgba(210, 180, 140, 0.8);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    margin: 0 2px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 30px;
+}
+
+#workspaces button:hover {
+    background-color: rgba(139, 69, 19, 0.4);
+    color: #F5DEB3;
+    border: 1px solid rgba(139, 69, 19, 0.6);
+}
+
+#workspaces button.active {
+    background-color: #8B4513;
+    color: #F5DEB3;
+    border: 1px solid #F5DEB3;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #A0522D;
+    color: #F5DEB3;
+    border: 1px solid #F5DEB3;
+}
+
+/* Clock */
+#clock {
+    padding: 0 10px;
+    background-color: rgba(101, 67, 33, 0.2);
+    color: #D2B48C;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#clock:hover {
+    background-color: rgba(101, 67, 33, 0.4);
+}
+
+/* Right side modules */
+#pulseaudio,
+#custom-memory,
+#custom-ip,
+#custom-power {
+    padding: 0 10px;
+    margin: 0 2px;
+    background-color: rgba(101, 67, 33, 0.15);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Audio */
+#pulseaudio {
+    color: #CD853F;
+}
+
+#pulseaudio:hover {
+    background-color: rgba(205, 133, 63, 0.3);
+    color: #F5DEB3;
+}
+
+#pulseaudio.muted {
+    color: #A0522D;
+}
+
+/* Memory Chart */
+#custom-memory {
+    color: #DEB887;
+    font-family: 'JetBrains Mono', monospace;
+    min-width: 80px;
+}
+
+#custom-memory:hover {
+    background-color: rgba(222, 184, 135, 0.3);
+    color: #F5DEB3;
+}
+
+/* IP Address */
+#custom-ip {
+    color: #BC9A6A;
+}
+
+#custom-ip:hover {
+    background-color: rgba(188, 154, 106, 0.3);
+    color: #F5DEB3;
+}
+
+/* Power Button */
+#custom-power {
+    color: #8B4513;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#custom-power:hover {
+    background-color: rgba(139, 69, 19, 0.3);
+    color: #F5DEB3;
+}
+
+/* Animations */
+@keyframes blink {
+    to {
+        background-color: rgba(235, 77, 75, 0.5);
+    }
+}
+
+/* Tooltip */
+tooltip {
+    border-radius: 5px;
+    background-color: rgba(62, 39, 35, 0.9);
+    color: #D2B48C;
+    border: 1px solid rgba(101, 67, 33, 0.5);
+}
+
+tooltip label {
+    color: #D2B48C;
+}
